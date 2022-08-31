@@ -21,6 +21,7 @@ li {
     list-style-type: none;
 }
 
+
 /* NAV SECTION */
 
 nav {
@@ -125,7 +126,7 @@ header input {
     border-radius: 2px;
 }
 
-header li a {
+header li button {
     display: block;
     width: 100%;
     padding: 9px 20px;
@@ -191,6 +192,18 @@ section {
 .balance ul li strong {
     font-size: 24px;
     color: #262626;
+}
+
+.balance ul li span {
+    color: green;
+}
+
+.balance ul li:nth-child(2) span {
+    color: red;
+}
+
+.balance ul li:nth-child(3) span {
+    color: grey;
 }
 
 .wrap {
@@ -295,10 +308,12 @@ section {
     bottom: 10px;
 }
 
-.device h5 {
+.device p {
     position: absolute;
     bottom: 10px;
     left: 55px;
+    font-size: 12px;
+    color: #8C8C8C;
 }
 
 .device+section {
@@ -347,19 +362,33 @@ section {
 }
 
 /* BOTTOM */
+.widgetsInfo p {
+    margin-top: 10px;
+    color: #595959;
+    font-size: 14px;
+}
 
+.widgetsInfo,
 .bottomComponent {
     background-color: transparent;
     box-shadow: none;
 }
 
-.firstWidget {
+.bottomComponent {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.firstWidget,
+.secondWidget {
     position: relative;
     display: grid;
+    border-radius: 10px;
+}
+
+.firstWidget {
     grid-template-columns: 29% 42% 29%;
     margin-left: 0;
-    border-radius: 10px;
-    width: 65%;
 }
 
 .firstWidget div:not(.flex) {
@@ -379,11 +408,19 @@ section {
 }
 
 .production {
+    position: relative;
     background-color: rgba(107, 184, 72, 0.06);
 }
 
 .production li {
     margin-left: 10px;
+    margin-top: 10px;
+}
+
+.production img {
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
 }
 
 div .mainText {
@@ -399,24 +436,57 @@ div .desc {
 }
 
 .firstWidget .text .desc,
+.secondWidget div,
 .firstWidget li {
     color: #595959;
     font-size: 12px;
 }
 
-.firstWidget li strong {
+.firstWidget li strong,
+.secondWidget li strong {
     font-weight: 600;
     font-size: 16px;
     color: #262626;
 }
 
 .flex {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 20% 80%;
     padding-top: 10px;
 }
 
 .flex img,
 .flex p {
     padding-left: 10px;
+}
+
+.secondWidget {
+    grid-template-columns: 50% 50%;
+    margin: 35px 0;
+}
+
+.secondWidget div {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.secondWidget .production {
+    margin: 10px;
+}
+
+.left>img {
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+}
+
+.bottomComponent button {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    padding: 1px 8px;
+    background: #003FC9;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
 }
