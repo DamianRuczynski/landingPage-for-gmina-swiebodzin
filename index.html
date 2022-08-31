@@ -6,170 +6,242 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <nav>
-            <div class="logo"></div>
-            <ul>
-                <li><a href="">Podsumowanie</a></li>
-                <li><a href="">Urządzenia wykonawcze</a></li>
-                <li><a href="">Magazyny</a></li>
-                <li><a href="">Ładowarki</a></li>
-                <li><a href="">Spółdzielnia</a></li>
-                <li><a href="">Ustawienia</a></li>
-            </ul>
-        </nav>
-        <header>
-            <h2>Podsumowanie</h2>
-            <input type="date" name="" id="">
-            <a href="">Dzień</a><a href="">Miesiąc</a><a href="">Rok</a><a href="">Wybrany przedział</a>
-        </header>
-        <section>
-            <h2>Bilans Energetyczny</h2>
-            <h3>2456 kWh</h3>
-
-            <table>
-                <tr>
-                    <th>Energia wyprodukowana</th>
-                    <th>Energia oddana do sieci</th>
-                    <th>Autokonsumpcja energii</th>
-                    <th>Energia pobrana z sieci</th>
-                </tr>
-                <tr>
-                    <td>4018 kWh</td>
-                    <td>3 151 kWh</td>
-                    <td>867 kWh</td>
-                    <td>1 589 kWh</td>
-                </tr>
-            </table>
-        </section>
+    <div class="container">
         <aside>
-            <h3>Redukcja emisji CO2</h3>
-            <img src="" alt="">
-            <p>15 ton</p>
-        </aside>
-        <aside>
-            <h3>Ekwiwalent posadzonych drzew</h3>
-            <img src="" alt="">
-            <p>380 drzew</p>
-        </aside>
-        <aside>
-            <h3>Oszczędności</h3>
-            <img src="" alt="">
-            <p></p>
-        </aside>
-        <aside>
-            <h3>Liczba naładowanych samochodów</h3>
-            <img src="" alt="">
-            <p>19586</p>
+            <nav>
+                <img src="assets/nav/navLogo.png" alt="Logo 4IME" class="logo">
+                <ul>
+                    <li><a href=""><img src="assets/nav/Home.png" alt="Home">Podsumowanie</a></li>
+                    <li><a href=""><img src="assets/nav/Thunderbolt.png" alt="Tools">Urządzenia wytwórcze</a></li>
+                    <li><a href=""><img src="assets/nav/Database.png" alt="Warehouses">Magazyny</a></li>
+                    <li><a href=""><img src="assets/nav/Api.png" alt="Chargers">Ładowarki</a></li>
+                    <li><a href=""><img src="assets/nav/Mail.png" alt="Collective">Spółdzielnia</a></li>
+                    <li><a href=""><img src="assets/nav/Vector.png" alt="Settings">Ustawienia</a></li>
+                </ul>
+            </nav>
         </aside>
 
-        <h2>Stan bieżący</h2>
-        <p>na 3 kwietnia 2022, 19:00</p>
-        <a href="#">odswiez</a>
-        <section>
-            <h3>Urządzenia wytwórcze(40)</h3>
-            <table>
-                <tr>
-                    <th>Produkcja energii</th>
-                    <th>Oddanie energii do sieci</th>
-                    <th>Autokonsumpcja</th>
-                    <th>Pobór energii z sieci</th>
-                </tr>
-                <tr>
-                    <td>220 kW</td>
-                    <td>140 kW</td>
-                    <td>80 kW</td>
-                    <td>0 kW</td>
-                </tr>
-            </table>
-            <i></i>
-            <h5>Dane mogą być niepełne ze względu na brak synchronizacji z niektórymi urządzeniami wytwórczymi</h5>
-        </section>
-        <aside>
-            <h4>Magazyny (1)</h4>
-            <a href="">Szczegóły</a>
-            <i></i>
-            <p>Status naładowania</p>
-            <h5>W normie</h5>
-        </aside>
-        <aside>
-            <h4>Ładowarki (1)</h4>
-            <a href="">Szczegóły</a>
-            <i></i>
-            <p>Zajętość</p>
-            <h5>10/15</h5>
-        </aside>
+        <div class="topic">
+            <menu>
+                <li><img src="assets/head/Alert.png" alt=""></li>
+                <li><img src="assets/head/Avatar.png" alt=""></li>
+                <li>Gmina Świebodzin</li>
+            </menu>
+            <main>
+                <header>
+                    <h2>Podsumowanie</h2>
+                    <ul>
+                        <li><input type="date" value="2018-07-22"></li>
+                        <li><input type="date" value="2018-07-22"></li>
+                        <li><a href="">Dzień</a></li>
+                        <li><a href="" class="active">Miesiąc</a></li>
+                        <li><a href="">Rok</a></li>
+                        <li><a href="">Wybrany przedział</a></li>
+                    </ul>
+                </header>
+                <section class="balance">
+                    <div class="balanceSheet">
+                        <img src="assets/section/i12.png" alt="">
+                        <p>Bilans Energetyczny
+                            <br><strong>2456 kWh</strong>
+                        </p>
+                    </div>
+                    <ul>
+                        <li>Energia wyprodukowana <img src="assets/section/info.png" alt="info"><br><strong>+ 4
+                                018
+                                kWh</strong></li>
+                        <li>Energia oddana do sieci <img src="assets/section/info.png" alt="info"><br><strong>- 3
+                                151
+                                kWh</strong></li>
+                        <li>Autokonsumpcja energii <img src="assets/section/info.png" alt="info"><br><strong>= 867
+                                kWh</strong></li>
+                        <li>Energia pobrana z sieci <img src="assets/section/info.png" alt="info"><br><strong>+ 1
+                                589
+                                kWh</strong></li>
+                    </ul>
+                </section>
 
-        <h3>Widgety na stronie</h3>
-        <p>Chcesz poinformować o korzyściach produkcji zielonej energii?<br>Skopiuj kod URL widgetu i umieść go na
-            swojej stronie internetowej.</p>
-        <footer>
-            <aside>
-                <table>
-                    <tr>
-                        <th>Zielona Energia w Twojej Gminie</th>
-                        <th>Tak dbamy o środowisko</th>
-                        <th>Produkcja energii</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2"> Dzięki energii odnawialnej i magazynom energii, nasza gmina</td>
-                        <td>15 ton<br> o tyle zredukowaliśmy emisję C02</td>
-                        <td>Dziś<br> 193kWh</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>380 drzew<br>ekwiwalent posadzonych drzew</td>
-                        <td>w tym miesiący<br>4018 kWh</td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt="4IME"></td>
-                        <td>19 586 zł<br>tyle zaosczędziliśmy</td>
-                        <td>W tym roku<br>6292 kWh</td>
-                    </tr>
-                </table>
-            </aside>
-            <aside>
-                <table>
-                    <tr>
-                        <th>Zielona Energia w Twojej Gminie</th>
-                        <th>Produkcja energii</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <table>
-                                <tr>
-                                    <th>15 ton</th>
-                                    <td>mniej CO2</td>
-                                </tr>
-                                <tr>
-                                    <th>380</th>
-                                    <td>ekwiwalent drzew</td>
-                                </tr>
-                                <tr>
-                                    <th>19 586zł</th>
-                                    <td>oszczędności</td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td>Dziś<br> 193kWh</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>w tym miesiącu<br>4018 kWh</td>
-                    </tr>
-                    <tr>
-                        <td><img src="" alt="4IME"></td>
-                        <td>W tym roku<br>6292 kWh</td>
-                    </tr>
-                </table>
-            </aside>
+                <section class="wrap">
+                    <section class="info">
+                        <h3>Redukcja emisji CO2 </h3>
+                        <a href="#"><img src="assets/section/loop.png" alt="loop">More</a>
+                        <img src="assets/section/i8.png" alt="">
+                        <p>15 ton</p>
+                    </section>
+                    <section class="info">
+                        <h3>Ekwiwalent posadzonych drzew</h3>
+                        <img src="assets/section/i11.png" alt="">
+                        <p>380 drzew</p>
+                    </section>
+                    <section class="info">
+                        <h3>Oszczędności</h3>
+                        <img src="assets/section/i21.png" alt="">
+                        <p></p>
+                    </section>
+                    <section class="info">
+                        <h3>Liczba naładowanych samochodów</h3>
+                        <img src="assets/section/i21.png" alt="">
+                        <p>19 586</p>
+                    </section>
+                </section>
 
-        </footer>
+                <aside class="state">
+                    <h2>Stan bieżący</h2>
+                    <p>na 3 kwietnia 2022, 19:00</p>
+                    <a href="#">Odśwież</a>
+                </aside>
 
+                <section class="device">
+                    <h3>Urządzenia wytwórcze(40)</h3>
+                    <a href="#">Szczegóły</a>
+                    <table>
+                        <tr>
+                            <td>Produkcja energii</td>
+                            <td>Oddanie energii do sieci</td>
+                            <td>Autokonsumpcja</td>
+                            <td>Pobór energii z sieci</td>
+                        </tr>
+                        <tr>
+                            <th>220 kW</th>
+                            <th>140 kW</th>
+                            <th>80 kW</th>
+                            <th>0 kW</th>
+                        </tr>
+                    </table>
+                    <img src="assets/section/info2.png" alt="info">
+                    <h5>Dane mogą być niepełne ze względu na brak synchronizacji z niektórymi urządzeniami
+                        wytwórczymi
+                    </h5>
+                </section>
+                <section class="wrap">
+                    <section>
+                        <div class="top">
+                            <h3>Magazyny (1)</h3>
+                            <a href="">Szczegóły</a>
+                        </div>
+                        <div class="bottom">
+                            <img src="assets/section/greenLine.png" alt="">
+                            <div class="text">
+                                <p>Status naładowania</p>
+                                <p>W normie</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="top">
+                            <h3>Ładowarki (1)</h3>
+                            <a href="">Szczegóły</a>
+                        </div>
+                        <div class="bottom">
+                            <img src="assets/section/orangeLine.png" alt="">
+                            <div class="text">
+                                <p>Zajętość</p>
+                                <p>10/15</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="bottomComponent">
+                    <h2>Widgety na stronie</h2>
+                    <p>Chcesz poinformować o korzyściach produkcji zielonej energii?<br>Skopiuj kod URL widgetu i umieść
+                        go na
+                        swojej stronie internetowej.</p>
+
+                    <section class="firstWidget">
+                        <div class="text">
+                            <p class="mainText">Zielona Energia w Twojej Gminie</p>
+                            <p class="desc"> Dzięki energii odnawialnej i magazynom energii, nasza gmina</p>
+                        </div>
+                        <div class="environment">
+                            <p class="mainText">Tak dbamy o środowisko</p>
+                            <ul>
+                                <li>
+                                    <div class="flex">
+                                        <img src="assets/section/i12.png" alt="">
+                                        <p><strong>15 ton</strong><br> o tyle zredukowaliśmy emisję C02</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <img src="assets/section/i12.png" alt="">
+                                        <p><strong>380 drzew</strong><br>ekwiwalent posadzonych drzew</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex">
+                                        <img src="assets/section/i12.png" alt="">
+                                        <p><strong>19 586 zł</strong><br>tyle zaosczędziliśmy</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="production">
+                            <p class="mainText">Produkcja energii</p>
+                            <ul>
+                                <li>
+                                    <p><br>Dziś<br> <strong>193kWh</strong></p>
+                                </li>
+                                <li>
+                                    <p>w tym miesiącu<br><strong>4018 kWh</strong></p>
+                                </li>
+                                <li>
+                                    <p>W tym roku<br><strong>6292 kWh</strong></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <img src="assets/section/4ime.png" alt="logo">
+                    </section>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- 
+                <aside>
+                    <table>
+                        <tr>
+                            <th>Zielona Energia w Twojej Gminie</th>
+                            <th>Produkcja energii</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <tr>
+                                        <th>15 ton</th>
+                                        <td>mniej CO2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>380</th>
+                                        <td>ekwiwalent drzew</td>
+                                    </tr>
+                                    <tr>
+                                        <th>19 586zł</th>
+                                        <td>oszczędności</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>Dziś<br> 193kWh</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>w tym miesiącu<br>4018 kWh</td>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt="4IME"></td>
+                            <td>W tym roku<br>6292 kWh</td>
+                        </tr>
+                    </table>
+                </aside>
+
+            </footer>
+            
     </main>
+        </section> -->
 
 </body>
 
