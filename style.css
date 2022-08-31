@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@100&display=swap');
 
+/* DEAFULTS */
 
 * {
     margin: 0;
@@ -9,6 +10,7 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Poppins';
     font-style: normal;
+    font-size: 10px;
 }
 
 .container {
@@ -16,11 +18,23 @@
     grid-template-columns: 15% 85%;
 }
 
+section {
+    background-color: #fff;
+    margin: 35px;
+    box-shadow: 0px 8px 24px -2px rgba(3, 40, 75, 0.1);
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: transparent;
+    box-shadow: none;
+}
+
 li {
 
     list-style-type: none;
 }
-
 
 /* NAV SECTION */
 
@@ -33,44 +47,45 @@ nav {
     margin: 25px;
 }
 
-
 nav ul {
     padding-left: 15px;
 }
 
-nav li a {
-    display: block;
+nav li button {
     padding: 10px;
     width: 100%;
+    background-color: transparent;
+    border: none;
     color: #999;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    text-decoration: none;
+    font-size: 1.4rem;
+    text-align: left;
 }
 
-nav li:first-of-type a {
+nav li:first-of-type button {
     color: white;
     font-weight: 600;
 }
 
-nav li a img {
-    margin-right: 10px;
+/* MENU */
+
+menu {
+    margin: 0;
+    background-color: #fff;
+}
+
+menu li {
+    margin: 10px;
+    font-size: 1.2rem;
 }
 
 /* MAIN SECTION */
-
 
 main {
     background-color: #eee;
     padding: 20px;
 }
 
-menu {
-    margin: 0;
-    background-color: #fff;
-}
+/* HEADER */
 
 header {
     display: flex;
@@ -92,15 +107,6 @@ header ul {
     text-align: right;
 }
 
-menu li {
-    margin: 10px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: black;
-}
-
 header ul {
     margin: 0;
 }
@@ -112,7 +118,7 @@ header li:nth-child(2) {
 
 header h2 {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #262626;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -124,6 +130,7 @@ header input {
     border: 1px solid #1890FF;
     box-shadow: 0px 0px 4px rgba(24, 144, 255, 0.5);
     border-radius: 2px;
+    font-size: 1.4rem;
 }
 
 header li button {
@@ -133,9 +140,8 @@ header li button {
     background: #FFFFFF;
     border: 1px solid #D9D9D9;
     border-radius: 0px 2px 2px 0px;
-    text-decoration: none;
-    color: black;
     font-style: bold;
+    font-size: 1.4rem;
 }
 
 .active {
@@ -143,17 +149,9 @@ header li button {
     color: white;
 }
 
-/* SECTION */
-
-section {
-    background-color: #fff;
-    margin: 35px;
-    box-shadow: 0px 8px 24px -2px rgba(3, 40, 75, 0.1);
-}
+/* SECTION BALANCE */
 
 .balance {
-    display: grid;
-    grid-template-rows: 50% 50%;
     padding: 30px;
 }
 
@@ -164,17 +162,18 @@ section {
 
 .balanceSheet p {
     margin-left: 25px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .balanceSheet p strong {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .balance ul {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
     width: 80%;
     margin-top: 30px;
     margin-left: 30px;
@@ -182,19 +181,17 @@ section {
 }
 
 .balance ul li {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #8C8C8C;
 }
 
 .balance ul li strong {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #262626;
 }
 
 .balance ul li span {
+    font-size: 2rem;
     color: green;
 }
 
@@ -206,12 +203,7 @@ section {
     color: grey;
 }
 
-.wrap {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    background-color: transparent;
-    box-shadow: none;
-}
+/* INFO */
 
 .info {
     position: relative;
@@ -223,8 +215,7 @@ section {
     border-bottom: 1px solid #ddd;
     width: 100%;
     padding: 10px 15px 5px 20px;
-    font-weight: 600;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #262626;
 }
 
@@ -233,11 +224,9 @@ section {
     top: 12px;
     right: 25px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #1890FF;
 }
-
-
 
 .info img:not(a>img) {
     position: absolute;
@@ -249,9 +238,11 @@ section {
     position: absolute;
     left: 100px;
     bottom: 25px;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #262626;
 }
+
+/* STATE */
 
 .state {
     display: grid;
@@ -261,29 +252,40 @@ section {
     width: 50%;
 }
 
-.state p {
-    font-size: 14px;
-    color: c
+.state h2 {
+    font-size: 2rem;
 }
 
+.state p {
+    font-size: 1.4rem;
+    color: #595959;
+}
+
+.state a {
+    font-size: 1.4rem;
+}
+
+/* DEVICES */
+
 .device {
+    position: relative;
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 30% 30% 30%;
     width: 70%;
-    position: relative;
 }
 
 .device h3 {
-    /* position: absolute; */
     width: 70%;
     border-bottom: 1px solid #ddd;
     padding: 15px;
     padding-bottom: 45px;
+    font-size: 1.6rem;
 }
 
 .device a {
     line-height: 46px;
+    font-size: 1.4rem;
 }
 
 .device table {
@@ -293,12 +295,12 @@ section {
 }
 
 .device th {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #000000;
 }
 
 .device td {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #8C8C8C;
 }
 
@@ -312,9 +314,12 @@ section {
     position: absolute;
     bottom: 10px;
     left: 55px;
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #8C8C8C;
 }
+
+
+/* LAST SECTION WITH WAREHOUSES */
 
 .device+section {
     grid-template-columns: 50% 50%;
@@ -325,7 +330,7 @@ section {
     position: relative;
     margin: 0;
     margin-right: 35px;
-    /* padding: 20px; */
+    min-width: 300px;
 }
 
 .device+section section:nth-child(2) {
@@ -344,6 +349,11 @@ section {
     border-bottom: 1px solid #ddd;
 }
 
+.top h3,
+.top a {
+    font-size: 1.4rem;
+}
+
 .bottom {
     display: grid;
     grid-template-columns: 35% 65%;
@@ -351,21 +361,26 @@ section {
 }
 
 .text p {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #8C8C8C;
 
 }
 
 .text p:nth-child(2) {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #262626;
 }
 
-/* BOTTOM */
+/* BOTTOM SECTION */
+
+.widgetsInfo h2 {
+    font-size: 2rem;
+}
+
 .widgetsInfo p {
     margin-top: 10px;
     color: #595959;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .widgetsInfo,
@@ -426,7 +441,7 @@ section {
 div .mainText {
     color: #262626;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 0.01em;
 
 }
@@ -437,15 +452,18 @@ div .desc {
 
 .firstWidget .text .desc,
 .secondWidget div,
-.firstWidget li {
+.firstWidget li,
+.flex p,
+.production ul li p,
+.environment ul li p {
     color: #595959;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .firstWidget li strong,
 .secondWidget li strong {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #262626;
 }
 
@@ -485,8 +503,88 @@ div .desc {
     top: 110%;
     right: 0;
     padding: 1px 8px;
-    background: #003FC9;
     border: none;
     border-radius: 2px;
+    background: #003FC9;
     color: #fff;
+    font-size: 1.4rem;
+}
+
+@media(max-width: 1300px) {
+    * {
+        font-size: 8px;
+    }
+
+    .info a {
+        top: 6px;
+        right: 8px;
+    }
+
+    .device+.wrap,
+    .bottomComponent {
+        display: flex;
+        flex-flow: row wrap;
+        width: 70%;
+    }
+
+    .device table td {
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 1050px) {
+    * {
+        font-size: 8px;
+    }
+
+
+    .container {
+        display: block;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    header h2 {
+        padding-bottom: 10px;
+    }
+
+    .info a,
+    .flex img {
+        display: none;
+    }
+
+    .flex {
+        display: block;
+    }
+
+}
+
+@media(max-width: 930px) {
+
+    nav ul button img {
+        display: none;
+    }
+}
+
+@media(max-width: 850px) {
+    * {
+        font-size: 6px;
+    }
+
 }
