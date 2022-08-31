@@ -580,11 +580,77 @@ div .desc {
     nav ul button img {
         display: none;
     }
+
+
+    .production img {
+        display: none;
+    }
 }
 
-@media(max-width: 850px) {
+@media(max-width: 780px) {
     * {
         font-size: 6px;
     }
 
+    nav>img {
+        width: 50px;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+
+    .wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .info {
+        width: 180px;
+    }
+}
+
+@media(orientation: portrait) {
+
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+    }
+
+
+    nav li button {
+        padding: 5px;
+        width: auto;
+    }
+
+    .device {
+        width: 90%;
+    }
+
+    .bottomComponent img {
+        width: 50px;
+    }
+}
+
+
+@media(max-width: 450px) {
+    section {
+        margin-left: 5px;
+    }
+
+    .state {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        padding: 5px;
+    }
+
+    .device+section section {
+        margin-right: 0;
+        padding-top: 10px;
+        min-width: 250px;
+    }
 }
